@@ -1,0 +1,18 @@
+/* Complementos da interface do ADM (somam-se a estilo.css). */
+.selo-adm { font-family: var(--fonte-titulo); font-weight: 700; letter-spacing: .12em; font-size: .8rem; color: var(--fundo); background: var(--branco); padding: .2rem .55rem; border-radius: 4px; }
+.secao { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); margin: .8rem 0; }
+.secao > summary { cursor: pointer; padding: .9rem 1rem; font-family: var(--fonte-titulo); font-weight: 600; color: var(--branco); min-height: 44px; list-style-position: inside; }
+.secao[open] > summary { border-bottom: 1px solid var(--borda); }
+.secao-corpo { padding: .4rem 1rem 1rem; }
+.secao-corpo h3 { margin-top: 1.4rem; padding-top: .8rem; border-top: 1px solid var(--borda); }
+.secao-corpo h3:first-child { border-top: 0; margin-top: .6rem; }
+.form-adm { max-width: 560px; margin: .6rem 0; }
+.form-adm small { font-size: .82rem; }
+.top5 { display: grid; gap: .4rem; }
+textarea.campo { resize: vertical; font-family: var(--fonte-texto); }
+.grade-cartoes { display: grid; gap: .8rem; grid-template-columns: 1fr; }
+.grade-cartoes .cartao { margin: 0; }
+.codigo { font-size: 1.6rem; letter-spacing: .4em; text-align: center; font-variant-numeric: tabular-nums; }
+.qr { display: block; background: #fff; padding: 8px; border-radius: var(--raio); margin: 1rem 0; max-width: 100%; height: auto; }
+.chave { font-family: ui-monospace, Menlo, Consolas, monospace; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); padding: .6rem .8rem; word-break: break-all; color: var(--branco); user-select: all; }
+@media (min-width: 720px) { .grade-cartoes { grid-template-columns: 1fr 1fr; } }
